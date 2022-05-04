@@ -379,8 +379,10 @@ ul li ul:focus {
 
 html[data-theme='light'] {
     filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
 }
 
 html[data-theme='light'] .dont-invert {
     filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
   }
