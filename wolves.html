@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page about wolves.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer async></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js" defer async></script>
+        <link rel="icon" href="./img/logo.svg">
+        <link rel="mask-icon" href="./img/logo.svg" color="#000314">
+        <link rel="apple-touch-icon" href="./img/logo.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#000314">
+        <title>Wolves</title>
+    </head>
+    <body>
+        <header class="primary-header flex" id="top">
+            <div class="logo-container flex">
+                <a href="index.html" aria-label="home">
+                    <svg class="logo" width="32" height="32" fill="#CFD2E6" version="1.1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" alt="logo">
+                        <path d="m200 0a200 200 0 0 0-200 200 200 200 0 0 0 51 134c4-9 16-40-1-78-15-14-25-34-25-56 0-41 34-75 75-75s75 34 75 75-34 75-75 75c-8 0-16-1-24-4 9 43-9 75-9 75a10 10 0 0 1-1 2 200 200 0 0 0 134 52 200 200 0 0 0 200-200 200 200 0 0 0-200-200zm-100 145c-30 0-55 25-55 55s25 55 55 55c30 0 55-25 55-55s-25-55-55-55zm200 35a20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20 20 20 0 0 1 20-20zm-100 100a20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20 20 20 0 0 1 20-20z"/>
+                    </svg>
+                </a>
+                <p class="brand">Lions v. Wolves</p>
+            </div>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-label="open-close menu" aria-expanded="false">
+                <span class="sr-only">
+                    <i class="bi bi-list" data-visible="true"></i>
+                    <i class="bi bi-x" data-visible="false"></i>
+                </span>
+            </button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a href="index.html">
+                            <span><i class="bi bi-house-fill"></i></span><p class="nav-text">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lions.html">
+                            <span><i class="bi bi-heart-fill"></i></span><p class="nav-text">Lions</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wolves.html">
+                            <span ><i class="bi bi-hearts"></i></span><p class="nav-text">Wolves</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span aria-haspopup="true"><i class="bi bi-person-fill"></i></span><p class="nav-text">Account</p>
+                        </a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li>
+                                <a href="#" class="login-link">
+                                    <span>
+                                        <button class="login-toggle" aria-expanded="false" aria-label="login">
+                                            <span class="sr-only">
+                                                <i class="bi bi-box-arrow-in-right" data-visible="true"></i>
+                                                <i class="bi bi-box-arrow-left" data-visible="false"></i>
+                                            </span>
+                                        </button>
+                                    </span><p class="nav-text login-text">Log in</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.html">
+                                    <span><i class="bi bi-gear-fill"></i></span><p class="nav-text">Settings</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="theme-link">
+                                    <span>
+                                        <button class="theme-toggle" aria-expanded="false" aria-label="toggle theme">
+                                            <span class="sr-only">
+                                                <i class="bi bi-sun-fill" data-visible="true"></i>
+                                                <i class="bi bi-moon-fill" data-visible="false"></i>
+                                            </span>
+                                        </button>
+                                    </span><p class="nav-text theme-text">Theme</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="center container">
+            <h1>Wolves</h1>
+            <div id="carouselExampleIndicators" class="carousel slide dont-invert" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 0"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/wolf1.jpg" class="d-block w-100 img-fluid" alt="wolf">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/wolf2.jpg" class="d-block w-100 img-fluid" alt="wolf">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/wolf3.jpg" class="d-block w-100 img-fluid" alt="wolf">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/wolf4.jpg" class="d-block w-100 img-fluid" alt="wolf">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/wolf5.jpg" class="d-block w-100 img-fluid" alt="wolf">
+                  </div>  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu nisl, sit amet aliquam diam condimentum a. Ut sodales, erat sed blandit dictum, erat ante imperdiet enim, eget tristique est turpis vitae nulla.
+            </p>
+            <p>
+                Nunc metus sapien, placerat vitae pretium eget, ultrices non enim. Mauris porttitor placerat eros, molestie lacinia massa. Aenean tincidunt, dolor a volutpat lacinia, arcu augue malesuada purus, eget blandit odio tellus sed augue. Morbi ut neque mauris. Nulla sollicitudin consequat est. Fusce nec libero condimentum, faucibus magna eget, tempus leo. Nam rhoncus, nibh ut tincidunt eleifend, eros urna semper arcu, a luctus nisi urna vel felis. Integer a augue eget est fringilla consectetur faucibus at felis. Nullam dignissim maximus mattis.
+            </p>
+
+        </div>
+        <footer class="footer">
+            <a href="#top" aria-label="top">
+                <svg class="logo" width="32" height="32" fill="#CFD2E6" version="1.1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" alt="logo">
+                    <path d="m200 0a200 200 0 0 0-200 200 200 200 0 0 0 51 134c4-9 16-40-1-78-15-14-25-34-25-56 0-41 34-75 75-75s75 34 75 75-34 75-75 75c-8 0-16-1-24-4 9 43-9 75-9 75a10 10 0 0 1-1 2 200 200 0 0 0 134 52 200 200 0 0 0 200-200 200 200 0 0 0-200-200zm-100 145c-30 0-55 25-55 55s25 55 55 55c30 0 55-25 55-55s-25-55-55-55zm200 35a20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20 20 20 0 0 1 20-20zm-100 100a20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20 20 20 0 0 1 20-20z"/>
+                </svg>
+            </a>
+                <span class="copyright"> g1tha © 2022</span>
+                <a href="README.md" class="sources" target="_blank">Read me</a>
+        </footer>
+    </body>
+</html>
