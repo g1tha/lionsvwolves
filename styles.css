@@ -378,7 +378,6 @@ ul li ul:focus {
 }
 
 html[data-theme='light'] {
-    background: hsl(var(--fgcol0));
     filter: invert(1) hue-rotate(180deg);
 }
 
