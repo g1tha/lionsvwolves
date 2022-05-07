@@ -1,4 +1,4 @@
-const htmlEl = document.getElementsByTagName('html')[0];
+const styleSheet = document.getElementById('stylesheet');
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.nav-toggle');
 const navBurger = document.querySelector('.bi-list');
@@ -83,7 +83,7 @@ function enableLightMode() {
     lightIcon.setAttribute('data-visible', 'false');
     localStorage.setItem('lightMode', 'enabled');
     lightMode = localStorage.getItem('lightMode');
-    htmlEl.setAttribute('data-theme', 'light');
+    styleSheet.setAttribute('href', 'styles-light.css');
     if (themeSwitch !== null) {
         themeLbl.textContent = "Light theme on";
         themeSwitch.checked = true;
@@ -95,7 +95,7 @@ function disableLightMode() {
     lightIcon.setAttribute('data-visible', 'true');
     localStorage.setItem('lightMode', null);
     lightMode = localStorage.getItem('lightMode');
-    htmlEl.setAttribute('data-theme', 'dark');
+    styleSheet.setAttribute('href', 'styles.css');;
     if (themeSwitch !== null) {
         themeLbl.textContent = "Light theme off";
         themeSwitch.checked = false;
